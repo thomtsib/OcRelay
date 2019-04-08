@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-import colorama
-from colorama import Fore, Style
 
 def TurnOnOffLedLights(command):
     #region Realays
@@ -11,7 +9,6 @@ def TurnOnOffLedLights(command):
     #endregion
 
     #region Init Messages
-    print(Fore.BLUE + "Hello World")
     print("[-] Command is --> Turn {} lights <--".format(command))
     print("[-] Start Process...")
     print("[-] Relay number is: {}".format(relay))
