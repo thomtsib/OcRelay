@@ -14,14 +14,18 @@ def TurnOnOffLedLights(command):
     print("[-] Relay number is: {}".format(relay))
     #endregion
 
-    if (command == "Off"):
+    if (command == "Off" or command == "off"):
         print("[-] Send command to Arduino to get light sensor value.")
-        print("[-] Recieve from Arduino light sensor value.")
+        #send command
+        print("[-] Recieve from Arduino light sensor value and save it.")
+        lummen = 0;
         print("[-] Send turn off command to Arduino.")
         print("[-] Recieve turn off response off Arduino.")
-    elif (command == "On"):
+    elif (command == "On" or command == "on"):
         print("[-] Send command to Arduino to get light sensor value.")
-        print("[-] Recieve from Arduino light sensor value.")
+        #send command
+        print("[-] Recieve from Arduino light sensor value and save it.")
+
         print("[-] Send turn on command to Arduino.")
         print("[-] Recieve turn on response off Arduino.")
 
